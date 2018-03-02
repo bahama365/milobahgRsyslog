@@ -1,0 +1,6 @@
+Compose will create a volume called syslog_data
+So if you want to NFS cross mount, the compose file will append teh name of teh service before the volume name
+
+docker volume create syslog_data
+mount nfs:/data /var/lib/docker/syslog_data/data
+
